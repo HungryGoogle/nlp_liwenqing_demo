@@ -16,30 +16,28 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
 
-        <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
-        <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
-        <maven-surefire-plugin.version>2.14</maven-surefire-plugin.version>
-        <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
-        <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
-        <maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
-        <sonar-maven3-plugin.version>3.5</sonar-maven3-plugin.version>
+        <!--<maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>-->
+        <!--<maven-jar-plugin.version>2.4</maven-jar-plugin.version>-->
+        <!--<maven-surefire-plugin.version>2.14</maven-surefire-plugin.version>-->
+        <!--<maven-resources-plugin.version>2.6</maven-resources-plugin.version>-->
+        <!--<maven-source-plugin.version>2.2.1</maven-source-plugin.version>-->
+        <!--<maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>-->
+        <!--<sonar-maven3-plugin.version>3.5</sonar-maven3-plugin.version>-->
 
-        <javaee-web-api.version>6.0</javaee-web-api.version>
-        <junit.version>3.8.1</junit.version>
-        <jsoup.version>1.7.2</jsoup.version>
-        <slf4j-api.version>1.6.4</slf4j-api.version>
-        <logback-classic.version>0.9.28</logback-classic.version>
-        <httpclient.version>3.1</httpclient.version>
-        <ansj.version>1.4.1</ansj.version>
-        <json.version>chargebee-1.0</json.version>
-        <nekohtml.version>1.9.19</nekohtml.version>
+        <!--<javaee-web-api.version>6.0</javaee-web-api.version>-->
+        <!--<junit.version>3.8.1</junit.version>-->
+        <!--<jsoup.version>1.7.2</jsoup.version>-->
+        <!--<slf4j-api.version>1.6.4</slf4j-api.version>-->
+        <!--<logback-classic.version>0.9.28</logback-classic.version>-->
+        <!--<httpclient.version>3.1</httpclient.version>-->
+        <!--<ansj.version>1.4.1</ansj.version>-->
+        <!--<json.version>chargebee-1.0</json.version>-->
+        <!--<nekohtml.version>1.9.19</nekohtml.version>-->
         <stanford-parser.version>3.3.1</stanford-parser.version>
-        <jcl-over-slf4j.version>1.6.4</jcl-over-slf4j.version>
-        <jackson.version>1.9.13</jackson.version>
-        <!-- 数据库驱动 -->
-        <mysql.version>5.1.18</mysql.version>
+        <!--<jcl-over-slf4j.version>1.6.4</jcl-over-slf4j.version>-->
+        <!--<jackson.version>1.9.13</jackson.version>-->
     </properties>
 
     <dependencies>
@@ -64,12 +62,6 @@
             <artifactId>stanford-parser</artifactId>
             <version>${stanford-parser.version}</version>
         </dependency>
-        <!-- 拦截 apache commons logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${jcl-over-slf4j.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -79,21 +71,21 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- 打包插件，排除语料库和语料库工具以及日志配置文件 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>${maven-jar-plugin.version}</version>
-            </plugin>
-            <!-- resource插件, 设定编码 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>${maven-resources-plugin.version}</version>
-                <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
+            <!--&lt;!&ndash; 打包插件，排除语料库和语料库工具以及日志配置文件 &ndash;&gt;-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<version>${maven-jar-plugin.version}</version>-->
+            <!--</plugin>-->
+            <!--&lt;!&ndash; resource插件, 设定编码 &ndash;&gt;-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-resources-plugin</artifactId>-->
+                <!--<version>${maven-resources-plugin.version}</version>-->
+                <!--<configuration>-->
+                    <!--<encoding>${project.build.sourceEncoding}</encoding>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 
